@@ -1,140 +1,88 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>Pricing example · Bootstrap v5.3</title>
+    <title>Soji Financial</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
-
-    
-
-    
-
-<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link rel="canonical" href="https://sojifinancial.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./assets/css/bs.css" rel="stylesheet">
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<meta name="theme-color" content="#712cf9">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      .featurette img{
-        max-width: 500px;
-        height: 500px;
-      }
-    </style>
-
-    
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link href="./assets/css/head.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Check</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-  </symbol>
-</svg>
+    <div class="bg-soji-blue">
+      <div class="container nav-wrap">
+          <header>
+              <div class="d-flex flex-column flex-md-row align-items-center py-3">
+              <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                  <img class="site-logo me-3" src="./assets/img/4.png" alt="">
+                  <span class="fs-4 site-title">Soji Financial</span>
+              </a>
 
-<div class="container py-3">
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
-        <span class="fs-4">SOJI FINANCIAL</span>
-      </a>
-
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="services.html">Services</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="about.html">About</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">Punny headline</h1>
-        <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+              <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                  <a class="me-3 py-2 text-white text-decoration-none" href="about.html">About</a>
+                  <a class="me-3 py-2 text-white text-decoration-none" href="contact.html">Contact</a>
+              </nav>
+              </div>
+          </header>
       </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
-    
-    <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+<main>
+
+  <div class="soji-banner">
+    <div class="bg-img">
+      <img class="slides" src="./assets/img/slide2.jpeg" alt="">
+      <div class="container soji-caption">
+        <h1 class="txt-soji-blue">The one stop option<br>for you financial needs</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-soji-blue">
+    <div class="container py-5">
+      <div class="row align-items-start">
+        <div class="col-2">
+          <img src="./assets/img/4.png" alt="" width="100%">
+        </div>
+        <div class="col-10 mt-lg-5 pt-lg-5">
+          <p class="text-white">Soji Financial, Inc. is a premier accounting, tax and consulting service firm dedicated to providing optimal financial solutions for you and your business. We strive to provide customers with industry expertise and exemplary customer service to help you meet tax obligations, manage financial reports, and achieve financial goals. </p>
+          <p><a class="btn border-white text-white" href="contact.html">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing mt-5 pt-4">
+
+    <!-- START THE FEATURETTES -->
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">
-          Tax Compliance and Advisory</h2><br>
-        <p class="lead">Strategically Meeting Your Obligations</p>
+        <h2 class="featurette-heading fw-normal lh-1 txt-soji-blue">Tax Compliance and Advisory.</h2>
+        <p class="lead">We prepare and file tax returns for you and/or your company to meet the filing requirements so you can have peace of mind to focus on other things in life. Our work includes:</p>
+        <ul>
+            <li>Tax return preparation for individuals</li>
+            <li>Tax return preparation for partnerships</li>
+            <li>Tax return preparation for S-corporations</li>
+        </ul>
       </div>
       <div class="col-md-5">
-        <img src="./assets/img/taxes.jpeg" alt="">
+        <img src="./assets/img/taxes.jpeg" alt="" width=500 height="500">      
       </div>
     </div>
 
@@ -142,12 +90,15 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Consulting and
-          Planning</h2><br>
-        <p class="lead">Tracking and Measuring Your Business</p>
+        <h2 class="featurette-heading fw-normal lh-1 txt-soji-blue">Accounting and Bookkeeping.</h2>
+        <p class="lead">We provide accurate and timely financial information, plus insights on your business’s financial position, so you can make well-informed decisions.</p>
+        <ul>
+            <li>Transaction tracking and record keeping</li>
+            <li>Financial statement preparation and analysis</li>
+        </ul>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="./assets/img/consulting.jpeg" alt="">
+        <img src="./assets/img/book_keeping.jpeg" alt="" width=500 height="500">
       </div>
     </div>
 
@@ -155,59 +106,35 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">
-          Consulting and Planning</h2><br>
-        <p class="lead">Mapping the Path to Success</p>
+        <h2 class="featurette-heading fw-normal lh-1 txt-soji-blue">Consulting and Planning.</h2>
+        <p class="lead">We develop plans and strategies to help you better manage your wealth.</p>
+        <ul>
+            <li>Tax planning for individuals</li>
+            <li>Tax planning, financial analysis and forecasting for small businesses</li>
+        </ul>
       </div>
       <div class="col-md-5">
-        <img src="./assets/img/book_keeping.jpeg" alt="">
+        <img src="./assets/img/consulting.jpeg" alt="" width=500 height="500">
       </div>
     </div>
+
+    <hr class="featurette-divider">
+
     <!-- /END THE FEATURETTES -->
-  </main>
 
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-        <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Soji Financial</p>
   </footer>
-</div>
+</main>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+      
   </body>
 </html>
